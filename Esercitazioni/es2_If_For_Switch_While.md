@@ -11,7 +11,7 @@ Scrivi un programma che chiede all'utente di inserire un numero compreso tra
 
 ### Esercizio3
 Sono un docente devo assegnare dei voti. Se il voto è sotto il 70
-assegno F, se il voro è sotto 80 assegno C, se il voto è sotto 90 assegno B,
+assegno F, se il voto è sotto 80 assegno C, se il voto è sotto 90 assegno B,
 se è maggiore di 90 assegno A
 
 ### Esercizio4
@@ -25,19 +25,6 @@ Scrivi un programma che prenda in input il numero del mese (1-12) e stampi la st
 ### Esercizio5
 Scrivi tutti i numeri da 1 a 100. Per tutti i multipli di 3 stampa "Zoom", per tutti i multipli di 5 stampa "Boom". Per tutti i multipli di 3 e 5 stampa "Zoom Boom"
 
-
-### Esercizio6
-Crea una calcolatrice che continua a chiedere all'utente:
-- Due numeri
-- Un'operazione (+, -, *, /)
-Usa switch per gestire le operazioni e while per ripetere finché l'utente non digita "fine".
-
-### Esercizio7
-Scrivi un programma che mostri un menu con le seguenti opzioni:
-- Saluta
-- Mostra data
-- Esci
-Il programma deve continuare a mostrare il menu finché l'utente non sceglie l'opzione 3. Usa un ciclo do-while.
 
 ### Esercizio 8: Rimuovi duplicati
 Dato l'array `[3, 5, 3, 8, 5, 1]`, crea un nuovo array senza duplicati.
