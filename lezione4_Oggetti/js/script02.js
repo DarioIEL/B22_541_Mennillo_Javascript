@@ -52,8 +52,51 @@ gruppoStudio.forEach(stud =>{
 
 
 class Docente{
-    //nome, cognome, corsi assegnati, ente di Formazione
-    //metodo insegna()
-    //metodo presentati()
-    //metodo assegnaVoto(studente: Studente, voto: number)
+    /**
+     * 
+     * @param {String} nome 
+     * @param {String} cognome 
+     * @param {String[] | String} corsiAssegnati 
+     * @param {String} enteFormazione 
+     */
+    constructor(nome, cognome, corsiAssegnati, enteFormazione){
+        this.nome = nome;
+        this.cognome = cognome;
+        this.corsiAssegnati = corsiAssegnati;
+        this.enteFormazione = enteFormazione;
+    }
+
+    insegna(){
+        let lezione = "Sto tenendo lezione nei seguenti corsi";
+        if(this.corsiAssegnati.length > 1){
+            this.corsiAssegnati.forEach(corso => {
+                lezione += `\n ${corso}`;
+            })
+        }else{
+            lezione += `\n ${this.corsiAssegnati}`
+        }
+        return lezione;
+    }
+
+    presentati(){
+        let presentazione = `Ciao mi chiamo ${this.nome} ${this.cognome} e lavoro per ${this.enteFormazione}. \n`;
+        presentazione += this.insegna();
+        return presentazione;
+    }
+
+    /**
+     * 
+     * @param {Studente} studente 
+     * @param {Number} voto 
+     * @returns 
+     */
+    assegnaVoto(studente, voto){
+        let valutazione = `Lo studente ${studente.nome} ${studente.cognome} del corso ${studente.corso} ha una valutazione di ${voto}`;
+        return valutazione;
+    }
 }
+
+let doc1 = new Docente("Pier", "Pieri", ["Comunicazione", "Design", "Marketing"], "I&L");
+
+console.log(doc1.presentati());
+console.log(doc1.assegnaVoto(s1, 30));
