@@ -53,3 +53,13 @@ do{ //ESEGUE
         //...
     }
 }while (tentativo != NUMERO_SEGRETO) //CONTROLLA
+
+let presenti = [];
+
+while(presenti.length < 5){
+    alert("Non puoi ancora cominciare la lezione");
+    let studente = prompt ("Chi è entrato adesso ?");
+    presenti.push(studente);
+}
+
+alert("Ora può cominciare la lezione!!!");

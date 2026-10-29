@@ -19,4 +19,3 @@ console.log(num3);
 //estrarre un numero casuale tra 1 e 90
 let num4 = Math.ceil(Math.random() * 90);
 console.log(num4);
-
