@@ -37,5 +37,12 @@
     border: 2px solid black;
     border-radius: 15px;
     padding: 16px;
-    margin-top: 16px;
+    margin: 16px;
+    float: left;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }

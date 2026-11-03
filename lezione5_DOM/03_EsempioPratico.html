@@ -11,10 +11,11 @@
     
     <section>
         <h3>Tab con una classe active una alla volta</h3>
-        <span class="tab attivo">Home</span>
-        <span class="tab">Corsi</span>
-        <span class="tab">Docenti</span>
-        <span class="tab">Contatti</span>
+        <span data-target="home" class="tab attivo">Home</span>
+        <span data-target="corsi" class="tab">Corsi</span>
+        <span data-target="docenti" class="tab">Docenti</span>
+        <span data-target="todoList" class="tab">ToDo List</span>
+        <span data-target="contatti" class="tab">Contatti</span>
         <span id="tabScelto">Hai scelto: Home</span>
     </section>
 
@@ -22,9 +23,21 @@
         <div class="box" id="home">Home</div>
         <div class="box nascosto" id="corsi">Corsi</div>
         <div class="box nascosto" id="docenti">Docenti</div>
+        
+        <div class="box nascosto" id="todoList">
+            ToDo List
+        
+            <input type="text" id="itemTodo" placeholder="inserisci cosa fare">
+            <button type="button" id="btnAdd">Add</button>
+
+            <ul id="lista"></ul>
+        
+        </div>
+
         <div class="box nascosto" id="contatti">Contatti</div>
     </section>
 
     <script src="./js/script03.js"></script>
+    <script src="./js/script03TODO.js"></script>
 </body>
 </html>
