@@ -33,8 +33,12 @@ function caricaFoto(){  //finto
         let img = document.createElement("img");
         img.setAttribute("src", `./img/${foto}`);
 
-        card.appendChild(img);
+        let didasc = document.createElement("span");
+        didasc.textContent = foto.split(".")[0];
 
+
+        card.appendChild(img);
+        card.appendChild(didasc);
         galleria.appendChild(card);
     })
 
