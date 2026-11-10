@@ -12,13 +12,13 @@ function landing(){
         //3. Aggancio il figlio al parent
         benvenuto.textContent = "";
         benvenuto.appendChild(titolo);
-
+        caricaFoto();
     }, 2000);
 
 }
 
 
-    document.addEventListener("DOMContentLoaded", landing);
+document.addEventListener("DOMContentLoaded", landing);
 
 const galleria = document.querySelector("#galleria");
 
@@ -43,4 +43,4 @@ function caricaFoto(){  //finto
     })
 
 }
-caricaFoto();
+
