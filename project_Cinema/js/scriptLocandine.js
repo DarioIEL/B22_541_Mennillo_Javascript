@@ -25,7 +25,7 @@ class Film{
 
 //Questo array sotto lo si può considerare come se fosse un "database"
 let filmInSala = [
-    new Film("Oppenheimer", "Storico", 2023, "./img/oppenheimer.jpg", "https://it.wikipedia.org/wiki/Oppenheimer_(film)"),
+    new Film("Oppenheimer", "Storico", 2023, "./img/oppenheimer.jpg", "./pages/Oppenheimer.html"),
 
     new Film("Birdman", "Fantastico", 2014, "./img/birdman.jpg", "https://it.wikipedia.org/wiki/Birdman_(film)"),
 
